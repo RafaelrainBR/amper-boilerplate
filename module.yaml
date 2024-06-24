@@ -1,0 +1,15 @@
+product: jvm/app
+
+settings:
+   kotlin:
+      serialization:
+         format: json
+   kover:
+      enabled: true
+
+dependencies:
+   - $libs.ktor.server.core
+   - $libs.ktor.server.netty
+   - $libs.ktor.server.contentNegotiation
+   - $libs.ktor.serialization.json
+   - $libs.logback.classic
